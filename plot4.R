@@ -42,7 +42,5 @@ legend("topright",
 # Plot in position (2,2)
 plot(x, data$Global_reactive_power, xlab="datetime", ylab = "Global_reactive_power", type = "l")
 
-# Note: since my locale is French, instead of "Thu Fri Sat" we can read "Jeu Ven Sam"
-
 # Close graphic device
 dev.off()

@@ -20,7 +20,6 @@ x <- with(data, strptime(paste(Date, Time), format="%d/%m/%Y %H:%M:%S"))
 png(filename = "plot3.png", width = 480, height = 480)
 
 # Plot
-# Note: since my locale is French, instead of "Thu Fri Sat" we can read "Jeu Ven Sam"
 plot(x, data$Sub_metering_1, xlab = "", ylab= "Energy sub metering", type = "l")
 lines(x, data$Sub_metering_2, col = "red")
 lines(x, data$Sub_metering_3, col = "blue")

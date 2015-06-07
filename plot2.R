@@ -20,7 +20,6 @@ x <- with(data, strptime(paste(Date, Time), format="%d/%m/%Y %H:%M:%S"))
 png(filename = "plot2.png", width = 480, height = 480)
 
 # Plot
-# Note: since my locale is French, instead of "Thu Fri Sat" we can read "Jeu Ven Sam"
 plot(x, data$Global_active_power, xlab="", ylab = "Global Active Power (kilowats)", type = "l")
 
 # Close graphic device
