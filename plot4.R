@@ -26,7 +26,7 @@ par(mfrow = c(2,2))
 plot(x, data$Global_active_power, xlab="", ylab = "Global Active Power (kilowats)", type = "l")
 
 # Plot in position (1,2) 
-plot(x, data$Voltage, xlab="datetime", type = "l")
+plot(x, data$Voltage, xlab="datetime", ylab = "Voltage", type = "l")
 
 # Plot in position (2,1)
 plot(x, data$Sub_metering_1, xlab = "", ylab= "Energy sub metering", type = "l")
